@@ -1,0 +1,71 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid ddf8e2;
+    border-radius: 16px;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgb(6, 0, 0);
+    color: #065529;
+    background: #a7f2b6;
+  }
+
+  body {
+    font-family: "Paprika";
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #065529;
+  }
+
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ddf8e2;
+    color: #414d43;
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ddf8e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .skip {
+    position: absolute;
+    top: -50px;
+    background: #ffffff;
+    height: 25px;
+}
+.skip:focus {
+    top: 10px;
+}
